@@ -1,0 +1,62 @@
+<view class="booking">
+  <!-- 底层背景色 -->
+  <view class="booking-bg"></view>
+  
+  <!-- 类型标题切换 -->
+  <view class="booking-type-box">
+    <view class="booking-type">
+      <view class="booking-type-title-box">
+        <view class="booking-type-title clearfix">
+          <view class="fl tag-title {{item.isSelected?'active':''}}"  wx:for="{{typeTitle}}" wx:key="index" data-index="{{index}}" data-select="{{item.isSelected}}" bindtap="toggleTypeTitle">{{item.title}}</view>
+        </view>
+      </view>
+
+      <!-- 类型图标切换 -->
+      <view class="type-icon clearfix">
+        <view class="icon-box fl" wx:for="{{typeIconsData}}" wx:key="index">
+          <view class="icon-img {{item.isSelected?'active':''}}" data-index="{{index}}" data-select="{{item.isSelected}}" bindtap="toggleTypeIcon">
+            <image class="auto-img icon-image" src="{{item.url}}" mode="widthFix"></image>
+          </view>
+          <view class="icon-title">{{item.title}}</view>
+        </view>
+      </view> 
+    </view>
+
+    <!-- 账户选择 -->
+    <view class="account">
+      <view class="account-title">账户选择</view>
+      <view class="account-box clearfix">
+        <view class="account-item fl {{item.isSelected?'active':''}}" wx:for="{{accountData}}" wx:key="index" data-index="{{index}}" data-select="{{item.isSelected}}" bindtap="toggleAccount">{{item.title}}</view>
+      </view>
+    </view>
+
+    <!-- 记账信息 -->
+    <view class="booking-info">
+      <view class="booking-info-item">
+        <view class="booking-info-title">日期</view>
+        <view class="booking-info-ipt">
+           <picker mode="date" start="{{start}}" end="{{end}}" bindchange="selectDate">
+              <view class="picker">{{date}}</view>
+           </picker>
+        </view>
+      </view>
+
+      <view class="booking-info-item">
+        <view class="booking-info-title">金额</view>
+        <view class="booking-info-ipt">
+          <input class="digit" type="digit" placeholder="输入记账金额" bindchange="modifyMoney"/>
+        </view>
+      </view>
+
+       <view class="booking-info-item">
+        <view class="booking-info-title">备注</view>
+        <view class="booking-info-ipt">
+          <input class="digit" placeholder="输入备注内容" bindchange="modifyComment"/>
+        </view>
+      </view>
+    </view>
+
+    <view class="save" bindtap="save">保存</view>
+  </view>
+
+</view>

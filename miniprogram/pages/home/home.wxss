@@ -1,0 +1,130 @@
+.home .month-box{
+  background-image: linear-gradient(to right,#f1ce5f,#ebba40);
+  /* background:#eec652; */
+  padding:50rpx 60rpx;
+}
+.home .month-title{
+  color:#9c7b08;
+  font-size:28rpx;
+}
+.home .month-money{
+  color:#181200;
+  font-size:50rpx;
+  font-weight: bold;
+}
+.home .month-item-box {
+  margin-top:30rpx;
+  position:relative;
+}
+.home .month-item-title{
+  font-size:25rpx;
+  color:#9c7b08;
+  margin-right:20rpx;
+}
+.home .month-item{
+  height:50rpx;
+  line-height: 50rpx;
+}
+.home .split-line{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  width:1px;
+  height:25rpx;
+  line-height: 25rpx;
+  color:#666;
+}
+.home .home-info{
+  padding:20rpx 20rpx 0;
+  font-size:28rpx;
+  background:#fff;
+}
+.home .home-title{
+  color:#6a6a6a;
+  margin-right:20rpx;
+}
+.home .point{
+  width:60rpx;
+  height:10rpx;
+  /* background:#888; */
+  margin-top:12rpx;
+  position:relative;
+}
+.home .point-item{
+  background:#888;
+  width:10rpx;
+  height:10rpx;
+  margin:0 5rpx;
+  border-radius: 50%;
+}
+.home .picker-box{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:10rpx;
+}
+.home .picker{
+  opacity: 0;
+}
+.home .home-content{
+  padding:60rpx 0 5rpx;
+}
+.home .home-icon-box{
+  width:80rpx;
+  height:80rpx;
+  background:#888;
+  border-radius: 50%;
+}
+.home .home-type{
+  margin-bottom:25rpx;
+}
+.home .home-type-box{
+  width:calc(100% - 120rpx);
+  border-bottom:1rpx solid #e8e8e8;
+  padding:0 20rpx 20rpx;
+}
+.home .home-type-title{
+  height:50rpx;
+  line-height:50rpx;
+  font-weight: bold;
+  font-size:30rpx;
+}
+.home .pay-way{
+  margin-left:40rpx;
+  line-height: 50rpx;
+  color:#888;
+  font-size:22rpx;
+}
+.home .home-type-title.not-comment,.pay-way.not-comment{
+  height:80rpx;
+  line-height: 80rpx;
+}
+.home .home-type-comment{
+  height:30rpx;
+  line-height: 30rpx;
+  color:#888;
+  font-size:25rpx;
+}
+.home .home-money{
+  height:80rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+  font-size:32rpx;
+}
+.home .home-money.add{
+  color:#e4393c;
+}
+.home .home-money.reduce{
+  color: #3da783;
+}
+.home .home-icon-box-image{
+  height:80rpx;
+}
+.home .decimal{
+  font-size: 32rpx;
+  margin-top: 18rpx;
+}

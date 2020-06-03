@@ -1,0 +1,76 @@
+<view class="home">
+
+  <view class="month-box">
+    <view class="month">
+      <view class="month-title">本月结余</view>
+      <view class="month-money clearfix">
+        <view class="fl">{{monthMoney.surplus}}.</view>
+        <view class="fl decimal">{{monthMoney.decimalSurplus}}</view>
+      </view>
+    </view>
+
+    <view class="month-item-box clearfix">
+      <view class="month-item fl">
+        <view class="fr clearfix">
+           <view class="month-item-title fl">本月收入</view>
+           <view class="month-item-money fl">{{monthMoney.income}}</view>
+        </view>
+      </view>
+      <view class="month-item fr">
+        <view class="fr clearfix">
+           <view class="month-item-title fl">本月支出</view>
+           <view class="month-item-money fl">{{monthMoney.outcome}}</view>
+        </view>
+      </view>
+      <!-- 分割线 -->
+      <view class="split-line">|</view>
+    </view>
+  </view>
+
+  <view class="home-info">
+    <view class="clearfix">
+      <view class="fl clearfix">
+        <view class="fl home-title">{{date}}</view>
+        <view class="fl home-title">收入: {{dayMoney.income}}</view>
+        <view class="fl  home-title">支出: {{dayMoney.outcome}}</view>
+        <view></view>
+      </view>
+      <view class="fr point">
+        <view class="point-item fl"></view>
+        <view class="point-item fl"></view>
+        <view class="point-item fl"></view>
+         <picker class="picker-box" mode="date" start="{{dateRange.start}}" end="{{dateRange.end}}" bindchange="toggleDate">
+          <view class="picker" >请选择日期</view>
+         </picker>
+      </view>
+    </view>
+    
+    <view class="home-content">
+
+      <view class="home-type clearfix" wx:for="{{bookingDataByDay}}" wx:key="index">
+        <view class="fl home-icon-box">
+          <image class="auto-img home-icon-box-image" src="{{item.typeIconsData.url}}"></image>
+        </view>
+        <view class="fl home-type-box clearfix">
+          <view class="home-type-title-comment fl">
+            <view class="clearfix">
+              <view class="home-type-title fl {{item.comment==''?'not-comment':''}}">{{item.typeIconsData.title}}</view>
+              <view class="fl pay-way {{item.comment==''?'not-comment':''}}">{{item.accountData.title}}</view>
+            </view>
+            <view class="home-type-comment" wx:if="{{item.comment!=''}}">{{item.comment}}</view>
+          </view>
+          <view class="fr home-money {{item.typeTitle.type=='income'?'add':'reduce'}}">￥{{item.money}}</view>
+        </view>
+      </view>
+       <!-- <view class="home-type clearfix">
+        <view class="fl home-icon-box"></view>
+        <view class="fl home-type-box clearfix">
+          <view class="home-type-title-comment fl">
+            <view class="home-type-title not-comment">娱乐</view>
+          </view>
+          <view class="fr home-money reduce">-￥167.00</view>
+        </view>
+      </view> -->
+    </view>
+  </view>
+</view>

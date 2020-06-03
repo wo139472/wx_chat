@@ -1,0 +1,121 @@
+.booking .booking-bg{
+  background:#eab93f;
+  height:160rpx;
+}
+.booking .booking-type-box{
+  padding:20rpx;
+}
+.booking .booking-type{
+  background:#ffffff;
+  margin-top:-120rpx;
+  border-radius: 25rpx;
+}
+.booking-type-title-box{
+  padding:50rpx 0;
+}
+.booking-type-title-box .booking-type-title{
+  width:250rpx;
+  margin:0 auto;
+  border:1rpx solid #eab93f;
+  border-radius:30rpx;
+  overflow:hidden;
+}
+.booking-type-title-box .tag-title{
+  width:50%;
+  height:60rpx;
+  font-size:30rpx;
+  text-align:center;
+  line-height:60rpx;
+}
+.booking-type-title-box .tag-title.active{
+  background:#fedb5b;
+}
+.booking .icon-box{
+  width:20%;
+  margin-bottom:60rpx;
+}
+.booking .icon-img{
+  width:80rpx;
+  height:80rpx;
+  margin:0 auto;
+  transition:transform .1s linear;
+}
+.booking .icon-img.active{
+  transform: scale(1.2);
+}
+.booking .icon-image{
+  height:80rpx;
+}
+.booking .icon-title{
+  text-align: center;
+  margin-top:10rpx;
+  font-size:24rpx;
+  color:#444;
+}
+.booking .account{
+  margin-top:25rpx;
+  padding:20rpx;
+  background:#fff;
+  border-radius:25rpx;
+}
+.booking .account-title{
+  font-size:30rpx;
+  padding-bottom:20rpx;
+  border-bottom:1rpx solid #e8e8e8;
+}
+.booking .account-box{
+  margin-top:20rpx;
+}
+.booking .account-item{
+  width:calc(20% - 40rpx);
+  height:50rpx;
+  font-size:22rpx;
+  background:#e8e8e8;
+  margin:0 20rpx;
+  text-align:center;
+  line-height:50rpx;
+  border-radius:25rpx;
+}
+.booking .account-item.active{
+  background:#fedb5b;
+}
+.booking .booking-info{
+  margin-top:25rpx;
+  padding:20rpx;
+  background:#fff;
+  border-radius:25rpx;
+}
+.booking .booking-info-item{
+  display:flex;
+}
+.booking .booking-info-item:not(:last-child){
+  margin-bottom:20rpx;
+}
+.booking .booking-info-title{
+  width:80rpx;
+  height:50rpx;
+  color:#444;
+  font-size:30rpx;
+  line-height: 50rpx;
+}
+.booking .booking-info-ipt{
+  padding-left:30rpx;
+  height:50rpx;
+  width:calc(100% - 80rpx);
+  line-height:50rpx;
+  color:#666;
+  font-size:30rpx;
+}
+.booking .digit{
+  height:50rpx;
+  line-height:50rpx;
+}
+.booking .save{
+  height:70rpx;
+  line-height:70rpx;
+  text-align:center;
+  background:#fedb5b;
+  margin-top:50rpx;
+  border-radius: 20rpx;
+  font-size:32rpx;
+}

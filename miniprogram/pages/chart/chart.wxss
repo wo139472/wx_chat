@@ -1,0 +1,154 @@
+.chart .search{
+  height:80rpx;
+  background:#ebbb42;
+  padding:50rpx 30rpx 5rpx;
+}
+.chart .chart-ipt{
+  width:calc(100% - 140rpx);
+  height:60rpx;
+  background:#fff;
+  border-radius: 30rpx;
+  margin-right:20rpx;
+}
+.chart .chart-search{
+  width:120rpx;
+  height:60rpx;
+  background:#fff;
+  font-size:28rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color:#888;
+  border-radius:10rpx;
+}
+.chart .picker-box{
+  height:60rpx;
+  line-height: 60rpx;
+  padding:0 25rpx;
+  font-size:30rpx;
+  color:#888;
+}
+.chart .chart-type-box{
+  margin-top:10rpx;
+  padding:20rpx;
+  background:#fff;
+}
+.chart .chart-title-box{
+  width:50%;
+  height:90rpx;
+  font-weight: bold;
+  position:relative;
+}
+.chart .chart-title-item{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  border:1px solid transparent;
+  border-radius: 10rpx;
+  padding:10rpx;
+}
+.chart .chart-title-item.income.active{
+  border:2rpx solid #e4393c;
+}
+.chart .chart-title-item.outcome.active{
+  border:2rpx solid #3da783;
+}
+.chart .chart-title-item.income .chart-money{
+  color:#e4393c;
+}
+.chart .chart-title-item.outcome .chart-money{
+  color:#3da783;
+}
+.chart .canvas-box{
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.chart .booking-data{
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.chart .booking-data-item{
+  padding: 20rpx;
+}
+
+.chart .item-icon{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.chart .item-icon .item-icon-img{
+  height: 80rpx;
+}
+
+.chart .item-arrow{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 25rpx;
+}
+
+.chart .item-arrow-img{
+  height: 30rpx;
+}
+
+.chart .item-info{
+  width: calc(100% - 150rpx);
+  height: 80rpx;
+  padding: 0 20rpx;
+}
+
+.chart .top-item{
+  height: 40rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.chart .bottom-item{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.chart .top-item-title{
+  color: #444;
+}
+
+.chart .top-item-money{
+  font-weight: bold;
+}
+
+.chart .top-item-money.income{
+ color: #e4393c;
+}
+
+.chart .top-item-money.outcome{
+ color: #00B26A;
+}
+
+.chart .count{
+  width: 100rpx;
+  color: #999;
+  font-size: 24rpx;
+  text-align: right;
+}
+
+.chart .progress{
+  width: calc(100% - 100rpx);
+  height: 24rpx;
+  margin-top: 8rpx;
+  background-color: #e8e8e8;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.chart .progress-active{
+  width: 0;
+  height: 100%;
+  transition: width .3s linear;
+}
+
+.chart .booking-data-item:not(:last-child){
+  border-bottom: 1rpx solid #e8e8e8;
+}
